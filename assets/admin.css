@@ -1,0 +1,42 @@
+table.widefat {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.widefat th,
+table.widefat td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+table.widefat tbody tr {
+  display: table-row; /* Use table-row to maintain standard table behavior */
+}
+
+table.widefat tbody tr td {
+  word-break: break-word; /* Prevent overflowing text */
+}
+
+.notice {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 4px solid #d63638;
+  background-color: #f8d7da;
+}
+
+.notice p {
+  margin: 0;
+  color: #721c24;
+}
+
+.notice-dismiss {
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  color: #721c24;
+  background: none;
+  border: none;
+}
