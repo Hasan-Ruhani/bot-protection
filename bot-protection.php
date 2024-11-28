@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Bot-Protection
  * Description: A plugin to protect forms with robust bot protection and spam email prevention, while dynamically serving the action URL via a REST API for enhanced security.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Mirza Ovinoor
  * Author URI: https://codeforsite.com/
  * License: GPL2
