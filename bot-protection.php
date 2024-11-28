@@ -20,6 +20,12 @@ define('BOT_PROTECTION_PLUGIN_URL', plugin_dir_url(__FILE__));
 require_once BOT_PROTECTION_PLUGIN_DIR . 'includes/api-routes.php';
 require_once BOT_PROTECTION_PLUGIN_DIR . 'includes/admin-dashboard.php';
 
+// Github version control
+require_once plugin_dir_path(__FILE__) . 'updater.php';
+
+new BotProtectionUpdater('bot-protection/bot-protection.php', 'https://github.com/Hasan-Ruhani/bot-protection');
+
+
 // Enqueue scripts and styles for the admin area
 add_action('admin_enqueue_scripts', 'bot_protection_admin_assets');
 function bot_protection_admin_assets() {
