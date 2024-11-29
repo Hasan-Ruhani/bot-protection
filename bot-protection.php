@@ -1,12 +1,15 @@
 <?php
-/**
- * Plugin Name: Bot-Protection
- * Description: A plugin to protect forms with robust bot protection and spam email prevention, while dynamically serving the action URL via a REST API for enhanced security.
- * Version: 0.1.3
- * Author: Mirza Ovinoor
- * Author URI: https://codeforsite.com/
- * License: GPL2
+ /**
+ * Plugin Name:       Bot Protection
+ * Plugin URI:        https://github.com/Hasan-Ruhani/bot-protection
+ * Description:       A plugin to protect forms with robust bot protection and spam email prevention, while dynamically serving the action URL via a REST API for enhanced security.
+ * Version:           0.1.4
+ * Author:            Mirza Ovinor
+ * Author URI:        https://codeforsite.com/
+ * GitHub Plugin URI: https://github.com/Hasan-Ruhani/bot-protection
+ * Primary Branch:    main
  */
+
 
 if (!defined('ABSPATH')) {
     exit;
@@ -21,9 +24,8 @@ require_once BOT_PROTECTION_PLUGIN_DIR . 'includes/api-routes.php';
 require_once BOT_PROTECTION_PLUGIN_DIR . 'includes/admin-dashboard.php';
 
 // Github version control
-require_once plugin_dir_path(__FILE__) . 'updater.php';
-
-new BotProtectionUpdater('bot-protection/bot-protection.php', 'https://github.com/Hasan-Ruhani/bot-protection');
+require_once('updater.php');
+new BotProtectionUpdater('bot-protection', '0.1.3', 'https://github.com/Hasan-Ruhani/bot-protection');
 
 
 // Enqueue scripts and styles for the admin area
