@@ -1,10 +1,10 @@
 <?php
  /**
- * Plugin Name:       Bot Protection
+ * Plugin Name:       Bot-Protection
  * Plugin URI:        https://github.com/Hasan-Ruhani/bot-protection
  * Description:       A plugin to protect forms with robust bot protection and spam email prevention, while dynamically serving the action URL via a REST API for enhanced security.
- * Version:           0.1.4
- * Author:            Mirza Ovinor
+ * Version:           0.1.5
+ * Author:            Mirza Ovinoor
  * Author URI:        https://codeforsite.com/
  * GitHub Plugin URI: https://github.com/Hasan-Ruhani/bot-protection
  * Primary Branch:    main
